@@ -12,9 +12,6 @@
     "twitter": "https://twitter.com/yourhandle"
   },
   "navigation": [
-    { "title": "Home", "url": "/" },
-    { "title": "Blog", "url": "/blog/" },
-    { "title": "Categories", "url": "/categories/" },
     { "title": "About", "url": "/about/" },
     { "title": "Resume", "url": "https://docs.google.com/document/d/1rWNjSOHBal4F_Ob9XbsSx1HcDxP8DthBwrQgMiM5pqI/edit?usp=sharing" }
   ]
