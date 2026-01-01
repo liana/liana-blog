@@ -4,7 +4,6 @@ date: 2024-02-10
 categories:
   - Product Management
   - Software Development
-featured_image: /assets/images/featured/stage-lessons.jpg
 excerpt: "The unexpected parallels between performing arts and product development, and how my theater background makes me a better PM."
 layout: layouts/post.njk
 ---

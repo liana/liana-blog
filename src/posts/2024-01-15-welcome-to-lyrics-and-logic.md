@@ -3,7 +3,6 @@ title: "Welcome to Lyrics & Logic"
 date: 2024-01-15
 categories:
   - Product Management
-featured_image: /assets/images/featured/welcome.jpg
 excerpt: "From the stage to the terminal - my journey from performance to tech and why I'm starting this blog."
 layout: layouts/post.njk
 ---
