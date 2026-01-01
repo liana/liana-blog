@@ -6,9 +6,9 @@
     "clean": "rm -rf _site",
     "dev:eleventy": "eleventy --serve --quiet",
     "dev:tailwind": "npx tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/styles.css --watch",
-    "dev": "npm-run-all clean --parallel dev:*",
+    "dev": "npm-run-all clean build:eleventy build:tailwind --parallel dev:*",
     "build:eleventy": "eleventy",
-    "build:tailwind": "NODE_ENV=production npx tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/styles.css --minify",
+    "build:tailwind": "mkdir -p _site/assets/css && NODE_ENV=production npx tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/styles.css --minify",
     "build": "npm-run-all clean build:*"
   },
   "keywords": [
