@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: Blog
+pagination:
+  data: collections.posts
+  size: 9
+  reverse: true
+  alias: posts
+---
+
+<div class="max-w-5xl mx-auto px-4 py-12">
+  <h1 class="text-4xl md:text-5xl font-bold text-brand-blue mb-12">Blog</h1>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+    {% for post in posts %}
+      {% include "components/post-card.njk" %}
+    {% endfor %}
+  </div>
+
+  <!-- Pagination -->
+  {% if pagination.hrefs.length > 1 %}
+  <nav aria-label="Pagination" class="flex justify-center gap-2">
+    {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="px-4 py-2 bg-brand-teal text-white rounded hover:bg-teal-700 transition-colors">
+      ← Previous
+    </a>
+    {% endif %}
+
+    {% for href in pagination.hrefs %}
+    <a href="{{ href }}" class="px-4 py-2 {% if pagination.hrefs[loop.index0] == page.url %}bg-brand-blue text-white{% else %}bg-gray-200 text-gray-700 hover:bg-gray-300{% endif %} rounded transition-colors">
+      {{ loop.index }}
+    </a>
+    {% endfor %}
+
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="px-4 py-2 bg-brand-teal text-white rounded hover:bg-teal-700 transition-colors">
+      Next →
+    </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</div>

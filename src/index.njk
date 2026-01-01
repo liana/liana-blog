@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+
+<div class="bg-gradient-to-r from-brand-blue to-brand-teal text-white py-20">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">{{ site.title }}</h1>
+    <p class="text-xl md:text-2xl mb-8">{{ site.description }}</p>
+    <a href="/blog/" class="btn-primary inline-block">Read the Blog</a>
+  </div>
+</div>
+
+<div class="max-w-5xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold text-brand-blue mb-8">Latest Posts</h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% set postslist = collections.posts | reverse %}
+    {% for post in postslist.slice(0, 6) %}
+      {% include "components/post-card.njk" %}
+    {% endfor %}
+  </div>
+
+  <div class="text-center mt-12">
+    <a href="/blog/" class="text-brand-teal hover:text-brand-blue font-medium text-lg transition-colors">
+      View All Posts →
+    </a>
+  </div>
+</div>

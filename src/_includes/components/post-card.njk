@@ -1,0 +1,33 @@
+<article class="post-card">
+  {% if post.data.featured_image %}
+  <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" class="w-full h-48 object-cover">
+  {% endif %}
+
+  <div class="p-6">
+    <div class="flex gap-2 mb-3">
+      {% if post.data.categories %}
+        {% for category in post.data.categories %}
+        <span class="bg-brand-light text-brand-blue px-3 py-1 rounded-full text-xs font-medium">
+          {{ category }}
+        </span>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <h2 class="text-2xl font-bold text-brand-blue mb-2 hover:text-brand-teal transition-colors">
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h2>
+
+    <time datetime="{{ post.date | htmlDateString }}" class="text-sm text-gray-600 block mb-3">
+      {{ post.date | readableDate }}
+    </time>
+
+    <p class="text-gray-700 mb-4">
+      {{ post | excerpt }}
+    </p>
+
+    <a href="{{ post.url }}" class="text-brand-teal hover:text-brand-blue font-medium transition-colors">
+      Read More →
+    </a>
+  </div>
+</article>

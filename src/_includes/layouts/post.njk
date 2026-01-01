@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="max-w-4xl mx-auto px-4 py-12">
+  <!-- Post Header -->
+  <header class="mb-8">
+    <h1 class="text-4xl md:text-5xl font-bold text-brand-blue mb-4">{{ title }}</h1>
+
+    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-4">
+      <time datetime="{{ date | htmlDateString }}">
+        {{ date | readableDate }}
+      </time>
+      <span class="mx-2">•</span>
+      <span>{{ content | readingTime }} min read</span>
+
+      {% if categories %}
+      <span class="mx-2">•</span>
+      <div class="flex gap-2">
+        {% for category in categories %}
+        <span class="bg-brand-light text-brand-blue px-3 py-1 rounded-full text-xs font-medium">
+          {{ category }}
+        </span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    {% if featured_image %}
+    <img src="{{ featured_image }}" alt="{{ title }}" class="w-full rounded-lg shadow-lg">
+    {% endif %}
+  </header>
+
+  <!-- Post Content -->
+  <div class="prose prose-lg max-w-none">
+    {{ content | safe }}
+  </div>
+
+  <!-- Post Footer -->
+  <footer class="mt-12 pt-8 border-t border-gray-200">
+    <div class="flex justify-between items-center">
+      <a href="/blog/" class="text-brand-teal hover:text-brand-blue transition-colors font-medium">
+        ← Back to all posts
+      </a>
+      {% include "components/social-links.njk" %}
+    </div>
+  </footer>
+</article>

@@ -1,0 +1,21 @@
+{
+  "title": "Lyrics & Logic",
+  "description": "From Curtain to Code - A journey from performance to tech",
+  "url": "https://lianaleahy.com",
+  "author": {
+    "name": "Liana Leahy",
+    "email": "hello@lianaleahy.com"
+  },
+  "social": {
+    "instagram": "https://instagram.com/yourhandle",
+    "facebook": "https://facebook.com/yourprofile",
+    "twitter": "https://twitter.com/yourhandle"
+  },
+  "navigation": [
+    { "title": "Home", "url": "/" },
+    { "title": "Blog", "url": "/blog/" },
+    { "title": "Categories", "url": "/categories/" },
+    { "title": "About", "url": "/about/" },
+    { "title": "Resume", "url": "/resume.pdf" }
+  ]
+}

@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: Software Development
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  filter:
+    - Software Development
+permalink: "/category/software-development/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+
+<div class="max-w-5xl mx-auto px-4 py-12">
+  <div class="mb-8">
+    <h1 class="text-4xl md:text-5xl font-bold text-brand-blue mb-4">Software Development</h1>
+    <p class="text-xl text-gray-600">Posts about coding, technical skills, and software engineering practices</p>
+  </div>
+
+  {% set filteredPosts = collections.posts | selectattr("data.categories", "defined") | list %}
+  {% set categoryPosts = [] %}
+  {% for post in filteredPosts %}
+    {% if "Software Development" in post.data.categories %}
+      {% set categoryPosts = (categoryPosts.push(post), categoryPosts) %}
+    {% endif %}
+  {% endfor %}
+
+  {% if categoryPosts.length > 0 %}
+    <div class="space-y-8">
+      {% for post in categoryPosts %}
+        {% include "components/post-card.njk" %}
+      {% endfor %}
+    </div>
+
+    {% if pagination.href.next or pagination.href.previous %}
+      <nav class="flex justify-center gap-4 mt-12" aria-label="Pagination">
+        {% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}" class="btn-secondary">← Newer Posts</a>
+        {% endif %}
+        {% if pagination.href.next %}
+          <a href="{{ pagination.href.next }}" class="btn-secondary">Older Posts →</a>
+        {% endif %}
+      </nav>
+    {% endif %}
+  {% else %}
+    <p class="text-gray-600 text-lg">No posts in this category yet.</p>
+  {% endif %}
+</div>
