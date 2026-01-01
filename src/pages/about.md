@@ -5,9 +5,26 @@ title: About
 
 # About Liana
 
-## From Curtain to Code
+Liana Leahy combines deep technical expertise with a collaborative leadership style to deliver innovative, regulated digital products.
 
-Hi! I'm Liana Leahy, and I'm passionate about building products that make a difference. My journey to tech was unconventional - I started my career in the performing arts before transitioning into software development and product management.
+## From NYC Stages to Silicon Valley
+
+Hey there! I'm Liana, and I've had quite the multi-career adventure. My journey started in NYC, where I combined software development by day with theatrical performance at night.
+
+<div class="grid md:grid-cols-3 gap-6 my-8">
+  <div class="text-center">
+    <img src="/assets/images/about/BuddyColorado.jpg" alt="Buddy: The Buddy Holly Story" class="w-full rounded-lg shadow-md mb-2">
+    <p class="text-sm text-gray-600">Buddy: The Buddy Holly Story<br>Ordway National Tour</p>
+  </div>
+  <div class="text-center">
+    <img src="/assets/images/about/desperate5.jpg" alt="Desperate Housewives Channel Four Promo" class="w-full rounded-lg shadow-md mb-2">
+    <p class="text-sm text-gray-600">Desperate Housewives<br>Channel Four Promo</p>
+  </div>
+  <div class="text-center">
+    <img src="/assets/images/about/CurseoftheJadeScorpion_preview-687x1024.jpg" alt="Curse of the Jade Scorpion" class="w-full rounded-lg shadow-md mb-2">
+    <p class="text-sm text-gray-600">Curse of the Jade Scorpion<br>Rainbow Room Patron</p>
+  </div>
+</div>
 
 ## What I Do
 

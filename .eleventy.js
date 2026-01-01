@@ -14,6 +14,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
+  // Set passthrough copy to preserve directory structure
+  eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
   // Collections
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md")
