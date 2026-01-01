@@ -5,20 +5,24 @@
 /* Custom styles */
 @layer base {
   body {
-    @apply text-gray-900 bg-brand-secondary;
+    @apply text-brand-light bg-brand-bg;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-brand-bg;
+    @apply font-bold text-brand-light;
+  }
+
+  a {
+    @apply text-brand-light hover:text-brand-cream transition-colors;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-2 bg-brand-cream text-brand-bg rounded-lg hover:bg-brand-secondary transition-colors font-medium;
+    @apply px-6 py-2 bg-brand-cream text-brand-bg rounded-lg hover:bg-brand-light hover:text-brand-bg transition-colors font-medium;
   }
 
   .post-card {
-    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow;
+    @apply bg-brand-bg-dark rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-700;
   }
 }
