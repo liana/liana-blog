@@ -31,11 +31,36 @@
     @apply bg-brand-bg-dark rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border-2 border-gray-600;
   }
 
-  .post-card h3 {
+  .post-card h2 {
     @apply text-white;
   }
 
   .post-card p {
-    @apply text-gray-300;
+    @apply text-gray-200;
+  }
+
+  /* Blog post content styles */
+  article h1, article h2, article h3, article h4, article h5, article h6 {
+    @apply text-white font-bold;
+  }
+
+  article p {
+    @apply text-gray-200 leading-relaxed;
+  }
+
+  article ul, article ol {
+    @apply text-gray-200;
+  }
+
+  article a {
+    @apply text-white underline hover:text-gray-300;
+  }
+
+  article strong {
+    @apply text-white font-bold;
+  }
+
+  article code {
+    @apply bg-brand-bg-dark text-gray-200 px-2 py-1 rounded;
   }
 }
