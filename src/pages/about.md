@@ -37,10 +37,9 @@ The name represents my journey and philosophy:
 
 I love connecting with people who are passionate about technology, product, and career growth. Find me on:
 
-- 📧 Email: hello@lianaleahy.com
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
-- 💼 LinkedIn: [Liana Leahy](https://linkedin.com/in/yourprofile)
-- 📷 Instagram: [@yourhandle](https://instagram.com/yourhandle)
+- 📧 Email: lianaleahy@gmail.com
+- 💼 LinkedIn: [lleahy](https://linkedin.com/in/lleahy)
+- 📷 Instagram: [lianaredaleahy](https://instagram.com/lianaredaleahy)
 
 ## Speaking & Writing
 
