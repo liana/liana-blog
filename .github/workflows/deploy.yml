@@ -33,5 +33,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home/username/lianaleahy.com/
+          server-dir: /home/lleahy/lianaleahy.com/
           local-dir: ./_site/
