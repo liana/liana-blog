@@ -9,20 +9,33 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-brand-light;
+    @apply font-bold text-white;
   }
 
   a {
-    @apply text-brand-light hover:text-brand-cream transition-colors;
+    @apply text-brand-cream hover:text-white transition-colors underline;
+  }
+
+  /* Ensure sufficient contrast for paragraphs and lists */
+  p, li, span {
+    @apply text-gray-200;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-2 bg-brand-cream text-brand-bg rounded-lg hover:bg-brand-light hover:text-brand-bg transition-colors font-medium;
+    @apply px-6 py-2 bg-brand-bg-dark text-white border-2 border-white rounded-lg hover:bg-white hover:text-brand-bg transition-colors font-medium;
   }
 
   .post-card {
-    @apply bg-brand-bg-dark rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-700;
+    @apply bg-brand-bg-dark rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border-2 border-gray-600;
+  }
+
+  .post-card h3 {
+    @apply text-white;
+  }
+
+  .post-card p {
+    @apply text-gray-300;
   }
 }
