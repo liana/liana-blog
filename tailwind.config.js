@@ -5,9 +5,13 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          blue: '#1e3a8a',
-          teal: '#0d9488',
-          light: '#e0f2fe',
+          bg: '#3f5762',        // Dark blue-gray background
+          'bg-dark': '#2d3f47', // Darker blue-gray
+          cream: '#F9F6DE',     // Cream/off-white primary
+          secondary: '#fcf8f2', // Light beige
+          cyan: '#0693e3',      // Vivid cyan blue accent
+          purple: '#9b51e0',    // Vivid purple accent
+          light: '#f7fafc',     // Very light gray foreground
         }
       },
       fontFamily: {

@@ -5,17 +5,17 @@
 /* Custom styles */
 @layer base {
   body {
-    @apply text-gray-900 bg-white;
+    @apply text-gray-900 bg-brand-secondary;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-brand-blue;
+    @apply font-bold text-brand-bg;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-2 bg-brand-teal text-white rounded-lg hover:bg-teal-700 transition-colors;
+    @apply px-6 py-2 bg-brand-cream text-brand-bg rounded-lg hover:bg-brand-secondary transition-colors font-medium;
   }
 
   .post-card {
