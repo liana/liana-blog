@@ -5,9 +5,9 @@ layout: layouts/base.njk
 <article class="max-w-4xl mx-auto px-4 py-12">
   <!-- Post Header -->
   <header class="mb-8">
-    <h1 class="text-4xl md:text-5xl font-bold text-brand-light mb-4">{{ title }}</h1>
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">{{ title }}</h1>
 
-    <div class="flex flex-wrap items-center text-gray-400 text-sm mb-4">
+    <div class="flex flex-wrap items-center text-gray-300 text-sm mb-4">
       <time datetime="{{ date | htmlDateString }}">
         {{ date | readableDate }}
       </time>
@@ -18,7 +18,7 @@ layout: layouts/base.njk
       <span class="mx-2">•</span>
       <div class="flex gap-2">
         {% for category in categories %}
-        <span class="bg-brand-bg-dark text-brand-cream px-3 py-1 rounded-full text-xs font-medium border border-gray-700">
+        <span class="bg-brand-bg-dark text-white px-3 py-1 rounded-full text-xs font-medium border-2 border-gray-500">
           {{ category }}
         </span>
         {% endfor %}
