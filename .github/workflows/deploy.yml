@@ -28,12 +28,12 @@ jobs:
           NODE_ENV: production
 
       - name: Deploy via SFTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
           port: 22
-          server-dir: /home/lleahy/lianaleahy.com/
-          local-dir: ./_site/
+          local_path: ./_site/*
+          remote_path: /home/lleahy/lianaleahy.com/
+          sftp_only: true
