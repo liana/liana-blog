@@ -32,15 +32,17 @@ permalink: /about/
 </div>
 
 <div class="space-y-6">
-  <p class="text-gray-200">Hey there! I'm Liana, and I've had quite the multi-career adventure. My journey began in NYC where <em>by day</em> I developed everything from financial systems to client management tools and <em>by night</em> you could see me singing and dancing off-broadway and national tour.</p>
+  <p class="text-gray-200">I was born in Silicon Valley, but I've always been a bit of a "full-stack" human. I eventually headed east to study Computer Science at Smith College, minoring in Theater to balance the logic of code with the empathy of storytelling. My career officially kicked off in NYC, where I lived a true double life: developing financial software by day and performing in off-Broadway musicals by night.</p>
 
-  <p class="text-gray-200">After moving to Boston, I joined forces with Google and Harvard's Berkman Center to battle malware, created Facebook games that reached millions of players alongside industry veteran Jon Radoff, and delved into the fascinating world of behavioral science at WeSpire.</p>
+  <p class="text-gray-200">When I returned to Boston to start a family, I transitioned into the world of open internet advocacy at Harvard's Berkman Center. Working alongside Vint Cerf, I led the technical development of StopBadware, a cyber-justice initiative focused on protecting users and making the web a more transparent place. That experience in mission-driven tech stayed with me as I moved into the fast-paced world of social gaming at DisruptorBeam, where I built high-scale Facebook games for millions of concurrent users.</p>
 
-  <p class="text-gray-200">I learned about Product Management at MeYou Health, where I partnered with major insurance plans and hospitals to deliver wellness solutions that truly made a difference.</p>
+  <p class="text-gray-200">My time as an engineer taught me exactly how things are built, but I found myself increasingly drawn to the why—which led me naturally into Product Management. At MeYou Health, I bridged these two worlds by scaling a wellness platform that used game mechanics to drive healthy behaviors. Later, at Indigo Ag, I navigated the complex technical hurdles of identity and access management to support global sustainability in agriculture.</p>
 
-  <p class="text-gray-200">These days, I'm honored to be working at Woebot Health, where I'm steering our enterprise solutions to revolutionize mental health care.</p>
+  <p class="text-gray-200">One of my favorite chapters was my time with the MBTA. As a Senior PM, I helped lead the digital transformation of MBTA.com. We couldn't always make the buses run on time, but we did win a 2019 Webby Honoree award for making the digital experience better for the 15 million riders who rely on the T every day.</p>
 
-  <p class="text-gray-200">When I'm not at work, you'll find me paying it forward through mentoring and building up the tech community, especially for women in tech.</p>
+  <p class="text-gray-200">Most recently, my focus has been at the intersection of AI and human well-being. At Woebot Health, I served as Director of Product Management, leading teams to deliver a clinical-grade AI chatbot for anxiety and depression. My work focused on the ethical deployment of LLMs and agentic workflows, ensuring that "relational AI" remains safe, secure, and deeply helpful for people navigating their mental health.</p>
+
+  <p class="text-gray-200">When I'm not obsessed with product roadmaps, I'm usually still making music. I continue to sing and have a persistent (if slightly disastrous) habit of trying to learn new instruments. I've found that the best products—much like the best performances—require a mix of technical precision, constant practice, and a lot of heart.</p>
 </div>
 
 </div>
