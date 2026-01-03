@@ -14,9 +14,11 @@ permalink: /about/
   <div>
     <p class="text-gray-200">Hey there! I'm Liana, and I've had quite the multi-career adventure. My journey began in NYC where <em>by day</em> I developed everything from financial systems to client management tools and <em>by night</em> you could see me singing and dancing off-broadway and national tour.</p>
   </div>
-  <div>
-    <img src="/assets/images/about/BuddyColorado.jpg" alt="Buddy: The Buddy Holly Story - Ordway National Tour" class="w-full rounded-lg shadow-lg">
-    <p class="text-sm text-gray-400 mt-2 text-center">Buddy: The Buddy Holly Story - Ordway National Tour</p>
+  <div class="flex justify-center">
+    <div class="w-full md:w-1/3">
+      <img src="/assets/images/about/BuddyColorado.jpg" alt="Buddy: The Buddy Holly Story - Ordway National Tour" class="w-full rounded-lg shadow-lg">
+      <p class="text-sm text-gray-400 mt-2 text-center">Buddy: The Buddy Holly Story - Ordway National Tour</p>
+    </div>
   </div>
 </div>
 
@@ -35,9 +37,11 @@ permalink: /about/
     <p class="text-gray-200 mb-4">I learned about Product Management at MeYou Health, where I partnered with major insurance plans and hospitals to deliver wellness solutions that truly made a difference.</p>
     <p class="text-gray-200">These days, I'm honored to be working at Woebot Health, where I'm steering our enterprise solutions to revolutionize mental health care.</p>
   </div>
-  <div>
-    <img src="/assets/images/about/CurseoftheJadeScorpion_preview-687x1024.jpg" alt="Curse of the Jade Scorpion - Rainbow Room Patron" class="w-full rounded-lg shadow-lg">
-    <p class="text-sm text-gray-400 mt-2 text-center">Curse of the Jade Scorpion - Rainbow Room Patron</p>
+  <div class="flex justify-center">
+    <div class="w-full md:w-1/3">
+      <img src="/assets/images/about/CurseoftheJadeScorpion_preview-687x1024.jpg" alt="Curse of the Jade Scorpion - Rainbow Room Patron" class="w-full rounded-lg shadow-lg">
+      <p class="text-sm text-gray-400 mt-2 text-center">Curse of the Jade Scorpion - Rainbow Room Patron</p>
+    </div>
   </div>
 </div>
 
