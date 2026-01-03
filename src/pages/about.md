@@ -12,16 +12,22 @@ permalink: /about/
 
 <div class="grid grid-cols-3 gap-6 mb-12">
   <div class="text-center">
-    <img src="/assets/images/about/BuddyColorado.jpg" alt="Buddy: The Buddy Holly Story - Ordway National Tour" class="w-full rounded-lg shadow-lg">
-    <p class="text-sm text-gray-400 mt-2">Buddy: The Buddy Holly Story - Ordway National Tour</p>
+    <div class="max-w-xs mx-auto">
+      <img src="/assets/images/about/BuddyColorado.jpg" alt="Buddy: The Buddy Holly Story - Ordway National Tour" class="w-full rounded-lg shadow-lg">
+      <p class="text-sm text-gray-400 mt-2">Buddy: The Buddy Holly Story - Ordway National Tour</p>
+    </div>
   </div>
   <div class="text-center">
-    <img src="/assets/images/about/desperate5.jpg" alt="Desperate Housewives - Channel Four Promo" class="w-full rounded-lg shadow-lg">
-    <p class="text-sm text-gray-400 mt-2">Desperate Housewives - Channel Four Promo</p>
+    <div class="max-w-xs mx-auto">
+      <img src="/assets/images/about/desperate5.jpg" alt="Desperate Housewives - Channel Four Promo" class="w-full rounded-lg shadow-lg">
+      <p class="text-sm text-gray-400 mt-2">Desperate Housewives - Channel Four Promo</p>
+    </div>
   </div>
   <div class="text-center">
-    <img src="/assets/images/about/CurseoftheJadeScorpion_preview-687x1024.jpg" alt="Curse of the Jade Scorpion - Rainbow Room Patron" class="w-full rounded-lg shadow-lg">
-    <p class="text-sm text-gray-400 mt-2">Curse of the Jade Scorpion - Rainbow Room Patron</p>
+    <div class="max-w-xs mx-auto">
+      <img src="/assets/images/about/CurseoftheJadeScorpion_preview-687x1024.jpg" alt="Curse of the Jade Scorpion - Rainbow Room Patron" class="w-full rounded-lg shadow-lg">
+      <p class="text-sm text-gray-400 mt-2">Curse of the Jade Scorpion - Rainbow Room Patron</p>
+    </div>
   </div>
 </div>
 
