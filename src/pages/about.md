@@ -42,7 +42,7 @@ permalink: /about/
 
   <p class="text-gray-200">My focus then shifted to the intersection of AI and human well-being. At Woebot Health, I served as Director of Product Management, leading teams to deliver a clinical-grade AI chatbot for anxiety and depression. My work focused on the ethical deployment of LLMs and agentic workflows, ensuring that "relational AI" remains safe, secure, and deeply helpful for people navigating their mental health.</p>
 
-  <p class="text-gray-200">Currently, I'm a Principal Product Manager Technical at Amazon Robotics in Reading, where I'm scaling the Central Software division from inception. I lead a team of product managers to define and execute strategy across core fulfillment technology. I've architected the 3-year vision and technical roadmap for a core operations AI platform, securing executive investment for a multi-million dollar program to optimize global logistics. I'm also leading the strategic definition for a next-generation AI/ML-powered operations software system, establishing key performance metrics and driving initial development to enhance facility efficiency.</p>
+  <p class="text-gray-200">Currently, I'm a Principal Product Manager Technical at Amazon Robotics where I'm leading the strategic definition of operations software to enhance facility efficiency.</p>
 
   <p class="text-gray-200">When I'm not obsessed with product roadmaps, I'm usually still making music. I continue to sing and have a persistent habit of trying to learn new instruments. I've found that the best products, much like the best performances, require a mix of technical precision and constant practice.</p>
 </div>
