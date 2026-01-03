@@ -35,5 +35,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: sftp
           port: 22
-          server-dir: /lianaleahy.com/
+          server-dir: /home/lleahy/lianaleahy.com/
           local-dir: ./_site/
