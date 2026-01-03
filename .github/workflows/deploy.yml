@@ -27,11 +27,13 @@ jobs:
         env:
           NODE_ENV: production
 
-      - name: Deploy via FTP
+      - name: Deploy via SFTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: sftp
+          port: 22
           server-dir: /home/lleahy/lianaleahy.com/
           local-dir: ./_site/
