@@ -12,6 +12,7 @@ module.exports = {
           cyan: '#0693e3',      // Vivid cyan blue accent
           purple: '#9b51e0',    // Vivid purple accent
           light: '#f7fafc',     // Very light gray foreground
+          teal: '#00d084',      // Vivid green-cyan (header)
         }
       },
       fontFamily: {
