@@ -32,19 +32,7 @@ permalink: /about/
 </div>
 
 <div class="space-y-6">
-  <p class="text-gray-200">I was born in Silicon Valley, but I've always been a bit of a "full-stack" human. I eventually headed east to study Computer Science at Smith College, minoring in Theater to balance the logic of code with the empathy of storytelling. My career officially kicked off in NYC, where I lived a true double life: developing financial software by day and performing in off-Broadway musicals by night.</p>
-
-  <p class="text-gray-200">After moving to Boston, I transitioned into the world of open internet advocacy at Harvard's Berkman Center. Working alongside Vint Cerf, I led the technical development of StopBadware, a cyber-justice initiative focused on protecting users and making the web a more transparent place. That experience in mission-driven tech stayed with me as I moved into the fast-paced world of social gaming at DisruptorBeam, where I built high-scale Facebook games for millions of concurrent users.</p>
-
-  <p class="text-gray-200">My time as an engineer taught me exactly how things are built, but I found myself increasingly drawn to the why, which led me naturally into Product Management. At MeYou Health, I bridged these two worlds by scaling a wellness platform that used game mechanics to drive healthy behaviors. Later, at Indigo Ag, I navigated the complex technical hurdles of identity and access management to support global sustainability in agriculture.</p>
-
-  <p class="text-gray-200">One of my favorite chapters was my time with the MBTA. As a Senior PM, I helped lead the digital transformation of MBTA.com. We couldn't always make the buses run on time, but we did win a 2019 Webby Honoree award for making the digital experience better for the 15 million riders who rely on the T every day.</p>
-
-  <p class="text-gray-200">My focus then shifted to the intersection of AI and human well-being. At Woebot Health, I served as Director of Product Management, leading teams to deliver a clinical-grade AI chatbot for anxiety and depression. My work focused on the ethical deployment of LLMs and agentic workflows, ensuring that "relational AI" remains safe, secure, and deeply helpful for people navigating their mental health.</p>
-
-  <p class="text-gray-200">Currently, I'm a Principal Product Manager Technical at Amazon Robotics where I'm leading the strategic definition of operations software to enhance facility efficiency.</p>
-
-  <p class="text-gray-200">When I'm not obsessed with product roadmaps, I'm usually still making music. I continue to sing and have a persistent habit of trying to learn new instruments. I've found that the best products, much like the best performances, require a mix of technical precision and constant practice.</p>
+  <p class="text-gray-200">I'm a Silicon Valley native who studied Computer Science and Theater at Smith College, which pretty much sums up my approach to building products—balancing technical precision with human empathy. My career has taken me from developing financial software and performing in off-Broadway musicals in NYC, to leading technical development at Harvard's Berkman Center alongside Vint Cerf on StopBadware, a cyber-justice initiative protecting internet users. I've built high-scale social games for millions of players, led digital transformation at the MBTA (winning a 2019 Webby Honoree award), and served as Director of Product Management at Woebot Health, where I focused on the ethical deployment of AI chatbots for mental health. Currently, I'm a Principal Product Manager Technical at Amazon Robotics, leading the strategic definition of operations software to enhance facility efficiency. Throughout my career, I've moved from engineering to product management because I became fascinated with not just how things are built, but why—and when I'm not obsessing over product roadmaps, you'll find me making music and learning new instruments, because the best products, like the best performances, require both technical skill and constant practice.</p>
 </div>
 
 </div>
