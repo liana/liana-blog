@@ -17,7 +17,44 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['Merriweather', 'Georgia', 'serif'],
-      }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#e5e7eb', // gray-200 for body text
+            h1: {
+              color: '#ffffff', // white for headings
+            },
+            h2: {
+              color: '#ffffff',
+            },
+            h3: {
+              color: '#ffffff',
+            },
+            h4: {
+              color: '#ffffff',
+            },
+            h5: {
+              color: '#ffffff',
+            },
+            h6: {
+              color: '#ffffff',
+            },
+            strong: {
+              color: '#ffffff',
+            },
+            a: {
+              color: '#ffffff',
+              '&:hover': {
+                color: '#d1d5db', // gray-300
+              },
+            },
+            code: {
+              color: '#e5e7eb',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [
