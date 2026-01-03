@@ -60,6 +60,10 @@ module.exports = function(eleventyConfig) {
     return Math.ceil(numberOfWords / wordsPerMinute);
   });
 
+  eleventyConfig.addFilter("currentYear", () => {
+    return new Date().getFullYear();
+  });
+
   // Markdown
   let markdownLibrary = markdownIt({
     html: true,
