@@ -1,4 +1,5 @@
 ---
+layout: layouts/post.njk
 title: "Separating Business Logic from LLMs for Reliable Enterprise AI"
 date: 2025-01-24
 categories:
@@ -7,24 +8,18 @@ featured_image: /assets/images/featured/separating-business-logic.jpg
 excerpt: "Why unrestricted AI autonomy fails in production environments and how structured automation creates reliable enterprise AI systems."
 ---
 
-Liana Leahy discusses a blog post by Hugo Bowne-Anderson and Alan Nichol titled "Beyond Prompt-and-Pray," which critiques the approach of allowing AI systems to operate with minimal oversight.
+The article discusses a blog post titled "Beyond Prompt-and-Pray" by Hugo Bowne-Anderson and Alan Nichol. The authors argue against the "prompt and pray" approach to AI implementation.
 
-## The Problem with Unrestricted AI
+## Key Points
 
-The post highlights fundamental limitations with unrestricted AI autonomy in production environments. The authors argue that simply prompting language models without guardrails creates systems that are both unreliable and expensive to maintain.
+The piece highlights that relying solely on LLMs to manage workflows becomes problematic beyond prototyping. The authors note that "Complex workflows require more control than simply trusting an LLM to figure everything out… Debugging these systems is a nightmare…"
 
-## On Debugging Challenges
+They propose "structured automation" as an alternative—a development methodology that separates conversational AI's natural language understanding from deterministic workflow execution.
 
-The article notes that reviewing transcripts and using trial-and-error approaches fails to scale effectively for complex applications requiring consistent user experiences.
+## Main Argument
 
-## Proposed Solution: Structured Automation
+Rather than giving AI systems complete autonomy, the authors advocate for intelligent deployment of their capabilities. As they state: "The future of enterprise conversational AI isn't in giving models more runtime autonomy—it's in using their capabilities more intelligently to create reliable, maintainable systems."
 
-The authors advocate for "structured automation"—an architecture that separates conversational AI's language comprehension capabilities from predetermined business logic execution. This approach maintains deterministic workflows while leveraging AI's natural language abilities.
+Liana Leahy, the blog's author, agrees that maintaining focused, thoughtful user experiences requires predefined, testable workflows that isolate business logic from conversational features. This separation ensures reliability, security, and safety in enterprise applications while maintaining human oversight.
 
-## Enterprise Implications
-
-Rather than pursuing increasingly autonomous agents, the future of enterprise AI involves strategically combining AI capabilities with explicit, testable workflows. This ensures the oversight and safety requirements that business-critical applications demand.
-
-## Conclusion
-
-Leahy concludes that this structured approach demonstrates why AI won't soon replace engineering and product management roles, as human judgment in designing thoughtful user experiences remains essential.
+The post concludes that this approach—combining natural language understanding with clear workflows—remains essential for dependable AI systems.
