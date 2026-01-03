@@ -13,7 +13,7 @@ permalink: /about/
 <div class="grid grid-cols-3 gap-6 mb-12">
   <div class="text-center">
     <div class="max-w-xs mx-auto">
-      <img src="/assets/images/about/BuddyColorado.jpg" alt="Buddy: The Buddy Holly Story - Ordway National Tour" class="w-full h-48 object-cover object-bottom rounded-lg shadow-lg">
+      <img src="/assets/images/about/BuddyColorado.jpg" alt="Buddy: The Buddy Holly Story - Ordway National Tour" class="w-full h-48 object-cover object-center rounded-lg shadow-lg">
       <p class="text-sm text-gray-400 mt-2">Buddy: The Buddy Holly Story - Ordway National Tour</p>
     </div>
   </div>
