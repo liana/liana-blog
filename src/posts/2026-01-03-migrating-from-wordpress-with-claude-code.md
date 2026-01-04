@@ -5,7 +5,7 @@ date: 2026-01-03
 categories:
   - Software Development
 excerpt: "How Claude Code and I migrated this entire blog from WordPress to 11ty. Spoiler: It wasn't straightforward, but we got there."
-featured_image: /assets/images/featured/wordpress-migration.jpg
+featured_image: /assets/images/featured/wordpress-migration.webp
 ---
 
 I just finished migrating this entire website from WordPress to a static site built with 11ty (Eleventy) and Tailwind CSS, working alongside Claude Code. And I'm not going to sugarcoat it—it was a journey filled with unexpected detours, frustrating dead ends, and ultimately, a satisfying triumph.
