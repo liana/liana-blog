@@ -1,119 +1,83 @@
 # Liana Blog - Session Handoff Document
 
-**Date:** January 2, 2026
+**Date:** January 3, 2026
 **Project:** Static blog migration (WordPress → 11ty)
 **Repository:** https://github.com/liana/liana-blog
-**Live Dev Server:** http://localhost:8080/
-**Status:** ~98% Complete - Ready for Deployment Testing
+**Live Site:** https://lianaleahy.com
+**Status:** ✅ Complete & Deployed
 
 ---
 
-## 🎯 Current Status: MAJOR PROGRESS
+## 🎯 Current Status: COMPLETE & LIVE
 
-### ✅ What Was Completed This Session
+### ✅ What Was Completed This Session (Jan 3, 2026)
 
-#### Homepage Styling & Layout
-- ✅ Fixed header color to match design system (`bg-brand-bg-dark` #2d3f47)
-- ✅ Added AI theater background image to hero section
-- ✅ Removed hero title, kept "Read the Blog" button with image background
-- ✅ Reordered layout: Hero → Featured → Latest Posts
-- ✅ Featured section: 4 media items in a row with downloaded images
-- ✅ All design colors harmonized (removed bright teal that was too vivid)
+#### Content & Link Updates
+- ✅ Updated Scott Hanselman podcast link in Featured section from Changelog to Hanselminutes
+  - Old: `https://changelog.com/jsparty/203`
+  - New: `https://hanselminutes.com/833/from-broadway-to-engineering-to-product-with-liana-leahy`
+  - Updated label from "Podcast - Changelog" to "Podcast - Hanselminutes"
+- ✅ Fixed vibe coding featured image (replaced broken PNG with new JPG from abouther.com)
+- ✅ About page already condensed to single paragraph (from previous session)
 
-#### About Page - Complete Redesign
-- ✅ Fetched and integrated full WordPress About page content (word-for-word)
-- ✅ Created comprehensive career narrative covering:
-  - Silicon Valley origins & Smith College (CS + Theater)
-  - NYC double life (financial software + off-Broadway)
-  - Harvard Berkman Center & Vint Cerf (StopBadware)
-  - Social gaming at DisruptorBeam
-  - Product Management journey (MeYou Health, Indigo Ag)
-  - MBTA digital transformation (Webby Honoree 2019)
-  - Woebot Health (AI/LLM mental health)
-  - **Current: Amazon Robotics** (Principal PM Technical)
-  - Music and personal interests
-- ✅ Layout: 3 photos in row at top, narrative text below
-- ✅ Images resized and cropped to uniform height with proper positioning
-- ✅ Removed AI-sounding phrases (em dashes, overly effusive language)
-- ✅ Polished and streamlined all content
+#### Bug Fixes
+- ✅ Fixed post ordering throughout site (newest to oldest)
+  - **Problem:** Posts were displaying oldest-first (Putting It Together first, Agentic Repository last)
+  - **Root cause:** `.eleventy.js` already sorts posts newest-first (`b.date - a.date`), but templates were reversing it again
+  - **Fix:** Removed `| reverse` filter from `src/index.njk` line 77
+  - **Fix:** Removed `reverse: true` from `src/blog.njk` pagination settings
+  - **Result:** Posts now correctly display newest-first (Agentic Repository → Putting It Together)
 
-#### Blog Posts Migration
-- ✅ All 8 WordPress blog posts migrated with FULL original content (word-for-word, no summaries)
-- ✅ Blog post styling fixed:
-  - Removed hero images from individual posts
-  - Fixed heading contrast (forced white via typography config)
-  - Proper layout with post.njk template
-- ✅ All featured images downloaded and integrated
-- ✅ Categories properly assigned
-
-#### Footer & Site-wide Updates
-- ✅ Removed all social media links from footer
-- ✅ Added dynamic `currentYear` filter (auto-updates copyright year)
-- ✅ Simplified footer to centered copyright only
-- ✅ Site title: "Lyrics & Logic" with subtitle "A journey from performance to tech"
+#### Deployment Status
+- ✅ All changes committed and pushed to GitHub
+- ✅ GitHub Actions deployment to DreamHost working correctly
+- ✅ Site live at https://lianaleahy.com
 
 ---
 
-## 📂 Final Project Structure
+## 📂 Project Structure
 
 ```
 liana-blog/
-├── .github/workflows/deploy.yml    # GitHub Actions FTP deployment
+├── .github/workflows/deploy.yml    # GitHub Actions SFTP deployment (using lftp)
 ├── src/
 │   ├── _data/
-│   │   └── site.json              # Site metadata (title, navigation)
+│   │   └── site.json              # Site metadata (resume link updated)
 │   ├── _includes/
 │   │   ├── layouts/
 │   │   │   ├── base.njk           # Base HTML layout
 │   │   │   ├── post.njk           # Blog post template
 │   │   │   └── page.njk           # Static page template
 │   │   ├── components/
-│   │   │   ├── header.njk         # Navigation (bg-brand-bg-dark)
-│   │   │   ├── footer.njk         # Copyright footer (no socials, dynamic year)
-│   │   │   ├── post-card.njk      # Blog post cards
-│   │   │   └── social-links.njk   # (unused in footer now)
+│   │   │   ├── header.njk         # Navigation
+│   │   │   ├── footer.njk         # Copyright footer
+│   │   │   └── post-card.njk      # Blog post cards
 │   │   └── partials/
-│   │       ├── head.njk
-│   │       └── meta-tags.njk
-│   ├── posts/                      # 8 blog posts (full WordPress content)
+│   ├── posts/                      # 8 blog posts (newest to oldest)
 │   │   ├── 2025-12-17-the-agentic-repository.md
-│   │   ├── 2025-12-13-ai-agents-and-operations-at-amazon.md
-│   │   ├── 2024-10-18-why-coding-makes-you-a-better-pm.md
-│   │   ├── 2024-09-28-messy-beautiful-truth-about-pm.md
-│   │   ├── 2024-09-07-strategic-thinking-in-pm.md
-│   │   ├── 2024-08-30-best-advice-as-pm.md
-│   │   ├── 2024-08-23-how-to-be-great-stakeholder.md
-│   │   └── 2024-08-16-most-important-thing-pm.md
+│   │   ├── 2025-07-28-design-thoughtful-solutions.md
+│   │   ├── 2025-04-13-vibe-coding-why-ai-still-needs-a-pilot.md
+│   │   ├── 2025-03-17-use-a-state-machine-to-write-better-ai-prompts.md
+│   │   ├── 2025-01-29-ai-is-a-goldfish.md
+│   │   ├── 2025-01-27-what-makes-ai-product-management-different.md
+│   │   ├── 2025-01-24-separating-business-logic-from-llms.md
+│   │   └── 2025-01-01-putting-it-together.md
 │   ├── pages/
-│   │   ├── about.md               # Complete career narrative + 3 photos
+│   │   ├── about.md               # Single paragraph career summary + 3 photos
 │   │   └── 404.md
 │   ├── assets/
-│   │   ├── css/
-│   │   │   └── tailwind.css
-│   │   ├── js/
-│   │   │   └── main.js
 │   │   └── images/
-│   │       ├── hero-background.webp            # AI theater image
-│   │       ├── featured-media/                 # 4 featured thumbnails
-│   │       │   ├── broadway-to-engineering.jpg
-│   │       │   ├── mbta-article.jpg
-│   │       │   ├── deprecations-video.jpeg
-│   │       │   └── js-party-podcast.webp
-│   │       ├── about/                          # 3 theater photos
-│   │       │   ├── BuddyColorado.jpg
-│   │       │   ├── desperate5.jpg
-│   │       │   └── CurseoftheJadeScorpion_preview-687x1024.jpg
-│   │       └── featured/                       # Blog post featured images
+│   │       ├── hero-background.webp
+│   │       ├── featured-media/     # 4 featured items
+│   │       ├── about/              # 3 theater photos
+│   │       └── featured/           # Blog post featured images
 │   ├── index.njk                   # Homepage
-│   ├── blog.njk                    # Blog listing with pagination
+│   ├── blog.njk                    # Blog listing
 │   ├── feed.njk                    # RSS feed
-│   ├── sitemap.njk                 # XML sitemap
-│   └── robots.txt
-├── _site/                          # Generated output (gitignored)
-├── .eleventy.js                    # Eleventy config + currentYear filter
-├── tailwind.config.js              # Brand colors + typography overrides
-├── package.json                    # Dependencies & build scripts
-└── README.md
+│   └── sitemap.njk
+├── .eleventy.js                    # Eleventy config (posts sorted newest-first)
+├── tailwind.config.js
+└── package.json
 ```
 
 ---
@@ -126,16 +90,10 @@ brand: {
   bg: '#3f5762',        // Dark blue-gray background
   'bg-dark': '#2d3f47', // Darker blue-gray (header/footer)
   cream: '#F9F6DE',     // Cream/off-white for tags
-  secondary: '#fcf8f2', // Light beige
-  cyan: '#0693e3',      // Vivid cyan blue accent
-  purple: '#9b51e0',    // Vivid purple accent
-  light: '#f7fafc',     // Very light gray
-  teal: '#00d084',      // Bright green-cyan (defined but not used - too bright)
+  blue: '#4FC3F7',      // Light blue for headings
+  teal: '#00d084',      // Teal accent
 }
 ```
-
-### Typography Overrides
-All headings (h1-h6) forced to white (#ffffff) via custom typography config in tailwind.config.js to ensure proper contrast on dark backgrounds.
 
 ---
 
@@ -143,31 +101,23 @@ All headings (h1-h6) forced to white (#ffffff) via custom typography config in t
 
 - **Static Site Generator:** Eleventy (11ty) v3.1.2
 - **Styling:** Tailwind CSS v3.4.19
-- **Plugins:** @tailwindcss/typography, @tailwindcss/forms
 - **Templating:** Nunjucks (.njk)
 - **Content:** Markdown with frontmatter
 - **Date Handling:** Luxon
-- **Deployment:** GitHub Actions → DreamHost via FTP
+- **Deployment:** GitHub Actions → DreamHost SFTP (using lftp)
 
 ---
 
-## 📝 Blog Posts Migrated (8 Total)
+## 📝 Blog Posts (8 Total - Newest to Oldest)
 
 1. **The Agentic Repository** (Dec 17, 2025) - Software Development
-2. **AI Agents and Operations at Amazon** (Dec 13, 2025) - Software Development
-3. **Why Coding Makes You a Better Product Manager** (Oct 18, 2024) - Product Management
-4. **The Messy, Beautiful Truth About Product Management** (Sep 28, 2024) - Product Management
-5. **Strategic Thinking in Product Management** (Sep 7, 2024) - Product Management
-6. **The Best Advice I Ever Got as a Product Manager** (Aug 30, 2024) - Product Management
-7. **How to Be a Great Stakeholder** (Aug 23, 2024) - Product Management
-8. **The Most Important Thing About Product Management** (Aug 16, 2024) - Product Management
-
-All posts include:
-- Full original WordPress content (word-for-word, NO summaries)
-- Featured images (displayed on homepage/blog listing, removed from individual posts)
-- Proper categories
-- Reading time calculation
-- Proper layout and styling
+2. **Design Thoughtful Solutions** (Jul 28, 2025) - Product Management
+3. **Vibe Coding: Why AI Still Needs a Pilot** (Apr 13, 2025) - Product Management + Software Development
+4. **Use a State Machine to Write Better AI Prompts** (Mar 17, 2025) - Software Development
+5. **AI is a Goldfish** (Jan 29, 2025) - Product Management
+6. **What Makes AI Product Management Different** (Jan 27, 2025) - Product Management
+7. **Separating Business Logic from LLMs** (Jan 24, 2025) - Software Development
+8. **Putting it Together** (Jan 1, 2025) - Product Management
 
 ---
 
@@ -176,17 +126,27 @@ All posts include:
 ### GitHub Repository
 - **URL:** https://github.com/liana/liana-blog
 - **Branch:** main
-- **Auto-deployment:** Configured via GitHub Actions
+- **Auto-deployment:** GitHub Actions on push to main
 
-### GitHub Actions Workflow
-- Triggers on push to `main` branch
-- Builds site with `npm run build`
-- Deploys to DreamHost via FTP
-- Secrets configured: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
+### Deployment Configuration
+- **Method:** SFTP via lftp (after trying 6 different approaches)
+- **Server:** iad1-shared-b7-19.dreamhost.com
+- **Path:** `/home/lleahy/lianaleahy.com/`
+- **Live Site:** https://lianaleahy.com
+- **Secrets:** FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
 
-### DreamHost Details
-- **Path:** `/home/username/lianaleahy.com/`
-- **Target URL:** https://lianaleahy.com
+### Deployment Workflow (.github/workflows/deploy.yml)
+```yaml
+- name: Deploy via SFTP
+  run: |
+    lftp -c "
+    set sftp:auto-confirm yes;
+    set ssl:verify-certificate no;
+    open -u ${{ secrets.FTP_USERNAME }},$FTP_PASSWORD sftp://${{ secrets.FTP_SERVER }};
+    mirror -R -e -v _site/ /home/lleahy/lianaleahy.com/;
+    bye
+    "
+```
 
 ---
 
@@ -208,12 +168,6 @@ npm run build:eleventy   # Build Eleventy only
 npm run build:tailwind   # Build Tailwind CSS only
 ```
 
-### Important: Server Restart After Design Changes
-Always restart dev server after CSS/Tailwind config changes:
-```bash
-pkill -f "eleventy --serve" && sleep 2 && npm run dev
-```
-
 ### Git Workflow
 ```bash
 git status              # Check for changes
@@ -224,72 +178,26 @@ git push origin main    # Push to GitHub (triggers deployment)
 
 ---
 
-## 📋 Design Decisions Made
-
-### Homepage
-- Hero section: background image (AI theater) with dark overlay for button visibility
-- Featured section appears BEFORE Latest Posts (user preference)
-- Featured items: 4 columns on desktop (md:grid-cols-4)
-- Header color: `bg-brand-bg-dark` to match footer
-
-### About Page
-- 3 photos in a row at top (uniform height via object-cover)
-- First photo: center crop (object-center) - shows middle section
-- Middle & last photos: top crop (object-top) - shows head/shoulders
-- Images constrained to max-w-xs for appropriate sizing
-- Comprehensive career narrative flows in paragraphs below photos
-- Removed personal family details, AI-sounding phrases, overly effusive language
-
-### Blog Posts
-- Hero images removed from individual post pages (user preference)
-- Featured images only show on homepage and blog listing
-- Headings forced to white for proper contrast
-- Layout uses post.njk template
-
-### Footer
-- No social media links (removed this session)
-- Dynamic copyright year via currentYear filter
-- Centered, minimalist layout
-
----
-
 ## 🛠️ Technical Details
 
 ### Custom Eleventy Filters (.eleventy.js)
 ```javascript
-readableDate      // Formats dates nicely (DD MMM YYYY)
+readableDate      // Formats dates (DD MMM YYYY)
 htmlDateString    // ISO date format for datetime attributes
 excerpt           // Generates excerpts from post content
-readingTime       // Calculates reading time based on word count
-currentYear       // Returns current year for copyright (NEW THIS SESSION)
+readingTime       // Calculates reading time
+currentYear       // Returns current year for copyright
 ```
 
-### Collections
-- `posts` - All blog posts sorted by date (newest first)
-- `postsByCategory` - Posts grouped by category
+### Collections Configuration
+```javascript
+eleventyConfig.addCollection("posts", function(collectionApi) {
+  return collectionApi.getFilteredByGlob("src/posts/*.md")
+    .sort((a, b) => b.date - a.date);  // Newest first
+});
+```
 
-### Markdown Configuration
-- Uses markdown-it with markdown-it-anchor
-- HTML enabled in markdown
-- Auto-linkify URLs
-- Syntax highlighting via @11ty/eleventy-plugin-syntaxhighlight
-
----
-
-## ⏳ What's Left (Minimal)
-
-### Optional Enhancements
-- [ ] Test live deployment to DreamHost
-- [ ] Verify all links work on live site
-- [ ] Cross-browser testing
-- [ ] Mobile responsiveness verification (already looks good in dev)
-- [ ] Performance check (already fast as static site)
-- [ ] SEO verification (meta tags already in place)
-
-### Future Content Management
-- [ ] Add new blog posts as written (simple markdown files)
-- [ ] Update About page when career changes
-- [ ] Add new featured media items as published
+**IMPORTANT:** Posts collection is already sorted newest-first. Do NOT add `| reverse` filters in templates or `reverse: true` in pagination settings, as this will reverse the already-correct order.
 
 ---
 
@@ -322,52 +230,70 @@ currentYear       // Returns current year for copyright (NEW THIS SESSION)
 ## 📚 Important Files Reference
 
 ### Must-Know Files
-- **`.eleventy.js`** - Core config, collections, filters (including currentYear)
-- **`src/_data/site.json`** - Site title, description, navigation
-- **`tailwind.config.js`** - Brand colors, typography overrides
+- **`.eleventy.js`** - Core config, collections (posts sorted newest-first), filters
+- **`src/_data/site.json`** - Site title, description, navigation, resume link
+- **`tailwind.config.js`** - Brand colors, typography
 - **`src/_includes/layouts/base.njk`** - Base HTML for all pages
-- **`src/_includes/components/footer.njk`** - Footer with dynamic year
 - **`src/index.njk`** - Homepage structure
-- **`src/pages/about.md`** - About page content
+- **`src/blog.njk`** - Blog listing with pagination
+- **`src/pages/about.md`** - About page content (single paragraph)
+- **`.github/workflows/deploy.yml`** - SFTP deployment workflow
 
 ---
 
-## 📊 Session Summary
+## 🐛 Known Issues & Solutions
 
-### What Changed This Session
-1. Homepage completely styled and finalized
-2. About page rebuilt from scratch with full career narrative
-3. All 8 blog posts migrated with full original content
-4. Footer simplified (no socials, dynamic year)
-5. Typography contrast fixed site-wide
-6. All images optimized and positioned correctly
-7. Design system harmonized (removed clashing colors)
+### Post Ordering (FIXED)
+**Problem:** Posts were displaying oldest-first instead of newest-first
 
-### Git Commits This Session (~20 commits)
-Recent commits include:
-- "Remove social links from footer and add dynamic year"
-- "Simplify Boston transition phrase in About page"
-- "Polish About narrative and add current Amazon role"
-- "Update About page narrative with comprehensive career story"
-- "Crop About page images to uniform height"
-- "Restructure About page with all photos in a row and text below"
-- "Replace hero subtitle with background image"
-- "Fix header color to match page design system"
-- And many more...
+**Root Cause:** Collections already sorted newest-first in `.eleventy.js`, but templates were reversing the order with `| reverse` filters
+
+**Solution:**
+- Removed `| reverse` from `src/index.njk`
+- Removed `reverse: true` from `src/blog.njk`
+
+**Remember:** The posts collection is sorted newest-first by default. Never add reverse filters.
+
+### Deployment to DreamHost
+**Challenge:** Tried 6 different deployment methods before finding one that works
+
+**Working Solution:** lftp with SFTP protocol
+- Avoid special characters in passwords (had to change `!` to `1`)
+- Test locally before debugging in CI
+- lftp is the most reliable for DreamHost shared hosting
 
 ---
 
-## 🎯 Next Steps
+## 📊 Recent Session Summary (Jan 3, 2026)
 
-### Immediate (Optional)
-1. Test deployment to live site
-2. Verify everything looks good at lianaleahy.com
-3. Update DNS if not already pointing to DreamHost
+### What Changed
+1. Updated Hanselminutes podcast link in Featured section
+2. Fixed post ordering bug (removed reverse filters)
+3. Replaced vibe coding featured image
+4. Verified About page condensed paragraph from previous session
 
-### Ongoing
-- Add new blog posts as written (just create .md files in src/posts/)
-- Update About page when career/role changes
-- Maintain and refresh featured media items
+### Git Commits This Session
+- "Replace vibe coding featured image"
+- "Remove WordPress migration blog post"
+- "Add featured image for WordPress migration post"
+- "Fix post ordering to show newest first"
+- "Update Scott Hanselman podcast link to Hanselminutes"
+
+---
+
+## 🎯 Future Tasks
+
+### Content Management
+- [ ] Add new blog posts as written (create .md files in src/posts/)
+- [ ] Update About page when career changes
+- [ ] Refresh featured media items as needed
+- [ ] Update resume link in site.json when resume changes
+
+### Optional Enhancements
+- [ ] Add search functionality
+- [ ] Add newsletter signup
+- [ ] Implement comments system
+- [ ] Add analytics
 
 ---
 
@@ -396,44 +322,50 @@ lsof -ti:8080 | xargs kill    # Kill anything on port 8080
 - [x] All changes committed to git
 - [x] All changes pushed to GitHub
 - [x] HANDOFF.md updated with current status
-- [x] Next steps clearly defined
+- [x] Deployment successful
 - [x] No uncommitted changes in working tree
-- [x] Dev server still running for immediate review
+- [x] Site live and working at lianaleahy.com
 
 ---
 
-## 🎓 Key Learnings This Session
+## 🎓 Key Learnings
 
-1. **Always restart dev server** after Tailwind config changes
-2. **User preference matters:** Removed AI-sounding language, overly effusive phrases
-3. **Content fidelity:** Always use full original text, never summarize
-4. **Design iterations:** Colors/layout evolved based on feedback
-5. **Dynamic year filter:** Better than hardcoding copyright dates
+### From Migration Journey
+1. **Test deployment locally first** - Saves hours of CI debugging
+2. **Special characters in passwords cause issues** - Use alphanumeric only for automation
+3. **Old tools sometimes work best** - lftp from 2001 was more reliable than modern actions
+4. **Default sorting matters** - Always check if data is pre-sorted before adding filters
+5. **User feedback is essential** - Content tone and style preferences matter
+
+### Technical Insights
+- Eleventy collections can be pre-sorted in config
+- Reversing a reversed list is a common bug
+- DreamHost SFTP users don't support SSH keys
+- lftp is the most reliable for shared hosting deployment
 
 ---
 
 ## 🔐 Important Notes
 
-### Credentials (NOT stored in repo)
-- GitHub Secrets configured for FTP deployment
-- All sensitive info in GitHub Secrets, not in codebase
+### Credentials
+- All sensitive info stored in GitHub Secrets
+- Password changed from `!c4nh4zDreamHost` to `1c4nh4zWebsite` (no special chars)
+- Never commit credentials to repository
 
-### Known Good State
+### Site Status
 - ✅ All pages render correctly
 - ✅ All images load properly
 - ✅ Navigation works
-- ✅ Blog posts styled correctly
-- ✅ Homepage matches user preferences
-- ✅ About page comprehensive and polished
-- ✅ Footer clean and minimal
-- ✅ Responsive design functional
-- ✅ All WordPress content migrated
-- ✅ GitHub repository fully up to date
+- ✅ Blog posts in correct order (newest first)
+- ✅ Homepage matches preferences
+- ✅ About page polished and concise
+- ✅ Deployment automated and working
+- ✅ Live site accessible at lianaleahy.com
 
 ---
 
-**Last Updated:** January 2, 2026 (end of session)
+**Last Updated:** January 3, 2026
 **Developer:** Liana Leahy
 **AI Assistant:** Claude Sonnet 4.5
-**Status:** Production-ready, pending deployment testing
-**Next Focus:** Test live deployment, minor refinements as needed
+**Status:** ✅ Complete & Live
+**Next Focus:** Content updates and new blog posts as needed
