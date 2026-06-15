@@ -1,6 +1,6 @@
 # Liana Blog - Session Handoff Document
 
-**Date:** January 3, 2026
+**Date:** June 14, 2026
 **Project:** Static blog migration (WordPress → 11ty)
 **Repository:** https://github.com/liana/liana-blog
 **Live Site:** https://lianaleahy.com
@@ -10,7 +10,22 @@
 
 ## 🎯 Current Status: COMPLETE & LIVE
 
-### ✅ What Was Completed This Session (Jan 3, 2026)
+### ✅ What Was Completed This Session (Jun 14, 2026)
+
+#### UI Cleanup
+- ✅ Removed social links from bottom of individual blog posts (`src/_includes/layouts/post.njk`)
+  - Removed `{% include "components/social-links.njk" %}` from post footer
+  - Simplified post footer to just the "← Back to all posts" link
+- ✅ Added LinkedIn link to site footer (`src/_includes/components/footer.njk`)
+  - Added `https://www.linkedin.com/in/lleahy/` below the copyright line on every page
+
+#### Deployment
+- ✅ All changes committed and pushed to GitHub (commits: `5827102`, `2eddcdd`)
+- ✅ Resume link commit from previous session (`2b72a53`) also pushed this session
+
+---
+
+### ✅ What Was Completed Previously (Jan 3, 2026)
 
 #### Content & Link Updates
 - ✅ Updated Scott Hanselman podcast link in Featured section from Changelog to Hanselminutes
@@ -368,8 +383,8 @@ lsof -ti:8080 | xargs kill    # Kill anything on port 8080
 
 ---
 
-**Last Updated:** January 3, 2026
+**Last Updated:** June 14, 2026
 **Developer:** Liana Leahy
-**AI Assistant:** Claude Sonnet 4.5
+**AI Assistant:** Claude Sonnet 4.6
 **Status:** ✅ Complete & Live
 **Next Focus:** Content updates and new blog posts as needed
