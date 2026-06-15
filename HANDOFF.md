@@ -284,8 +284,8 @@ eleventyConfig.addCollection("posts", function(collectionApi) {
 ## 🎯 Future Tasks
 
 ### Pending Changes (Next Session)
-- [ ] Remove social links from bottom of individual blog posts
-- [ ] Add LinkedIn link to footer: https://www.linkedin.com/in/lleahy/
+- [x] Remove social links from bottom of individual blog posts
+- [x] Add LinkedIn link to footer: https://www.linkedin.com/in/lleahy/
 
 ### Content Management
 - [ ] Add new blog posts as written (create .md files in src/posts/)
