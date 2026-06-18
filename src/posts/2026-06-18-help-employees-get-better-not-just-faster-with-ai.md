@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "Help Employees Get Better—Not Just Faster—with AI"
+title: "The Craft Behind the Output"
 date: 2026-06-18
 categories:
   - AI Strategy
