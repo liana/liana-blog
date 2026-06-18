@@ -36,7 +36,7 @@ So the PRD isn't just a planning artifact anymore. It's a living alignment tool.
 
 Here's where it gets interesting. My PRD now contains things that would traditionally live in a BRD. API payload shapes. Database schema decisions. JSON contracts between the frontend and backend. Which component renders which view.
 
-This isn't because I decided to merge two documents for fun. It's because the gap that a BRD used to bridge barely exists anymore. When the AI generates technical scaffolding directly from product intent, the translation layer between "what we want" and "how it's built" collapses. There's no separate engineering team that needs a separate document to work from. The same collaborator that reads the product intent also writes the code.
+The gap that a BRD used to bridge barely exists anymore. When the AI generates technical scaffolding directly from product intent, the translation layer between "what we want" and "how it's built" collapses. There's no separate engineering team that needs a separate document to work from. The same collaborator that reads the product intent also writes the code.
 
 This mirrors what's happening across the industry. Anthropic's framework for agentic systems prioritizes human decision authority and contextual adaptability. Their documentation guidelines emphasize that agents need *context* (system state, user goals, safety boundaries) rather than a static list of requirements to be effective. The traditional model of a static PRD followed by a separate BRD is giving way to living context documents that define constraints and intent rather than exhaustive specifications.
 
