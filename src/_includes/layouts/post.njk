@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 <article class="max-w-4xl mx-auto px-4 py-12">
   <!-- Post Header -->
-  <header class="mb-8">
+  <header class="mb-8 animate-fade-in-up">
     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">{{ title }}</h1>
 
     <div class="flex flex-wrap items-center text-gray-300 text-sm mb-4">
@@ -28,7 +28,7 @@ layout: layouts/base.njk
   </header>
 
   <!-- Post Content -->
-  <div class="prose prose-lg max-w-none">
+  <div class="prose prose-lg max-w-none animate-fade-in animate-delay-2">
     {{ content | safe }}
   </div>
 

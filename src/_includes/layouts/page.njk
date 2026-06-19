@@ -3,11 +3,11 @@ layout: layouts/base.njk
 ---
 
 <article class="max-w-4xl mx-auto px-4 py-12">
-  <header class="mb-8">
+  <header class="mb-8 animate-fade-in-up">
     <h1 class="text-4xl md:text-5xl font-bold text-brand-blue">{{ title }}</h1>
   </header>
 
-  <div class="prose prose-lg max-w-none">
+  <div class="prose prose-lg max-w-none animate-fade-in animate-delay-2">
     {{ content | safe }}
   </div>
 </article>
