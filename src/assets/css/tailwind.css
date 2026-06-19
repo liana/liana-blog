@@ -13,7 +13,7 @@
   }
 
   a {
-    @apply text-brand-cream hover:text-white transition-colors underline;
+    @apply text-brand-cream hover:text-white transition-colors no-underline;
   }
 
   /* Ensure sufficient contrast for paragraphs and lists */
