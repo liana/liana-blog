@@ -7,19 +7,21 @@ title: Home
   <div class="relative py-36 bg-cover" style="background-image: url('/assets/images/hero-background.webp'); background-position: left 70%;">
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     <div class="relative max-w-5xl mx-auto px-4 text-center">
-      <a href="/blog/" class="btn-primary inline-block">Read the Blog</a>
+      <a href="/blog/" class="btn-primary inline-block animate-fade-in-up animate-delay-3">Read the Blog</a>
     </div>
   </div>
 </div>
 
 <div class="bg-brand-bg py-16">
   <div class="max-w-5xl mx-auto px-4">
-  <h2 class="text-3xl font-bold text-white mb-8">Latest Posts</h2>
+  <h2 class="text-3xl font-bold text-white mb-8 reveal">Latest Posts</h2>
 
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-stagger">
     {% set postslist = collections.posts %}
     {% for post in postslist.slice(0, 6) %}
+      <div class="reveal">
       {% include "components/post-card.njk" %}
+      </div>
     {% endfor %}
   </div>
 
@@ -33,10 +35,10 @@ title: Home
 
 <div class="bg-brand-bg-dark py-16 border-b border-gray-700">
   <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-white mb-8">Featured</h2>
+    <h2 class="text-3xl font-bold text-white mb-8 reveal">Featured</h2>
 
-    <div class="grid md:grid-cols-4 gap-6">
-      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors">
+    <div class="grid md:grid-cols-4 gap-6 reveal-stagger">
+      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors reveal">
         <img src="/assets/images/featured-media/broadway-to-engineering.jpg" alt="From Broadway to Engineering" class="w-full h-48 object-cover">
         <div class="p-6">
           <h3 class="text-xl font-bold text-white mb-3">
@@ -49,7 +51,7 @@ title: Home
         </div>
       </div>
 
-      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors">
+      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors reveal">
         <img src="/assets/images/featured-media/mbta-article.jpg" alt="MBTA Article" class="w-full h-48 object-cover">
         <div class="p-6">
           <h3 class="text-xl font-bold text-white mb-3">
@@ -62,7 +64,7 @@ title: Home
         </div>
       </div>
 
-      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors">
+      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors reveal">
         <img src="/assets/images/featured-media/deprecations-video.jpeg" alt="Deprecations Video" class="w-full h-48 object-cover">
         <div class="p-6">
           <h3 class="text-xl font-bold text-white mb-3">
@@ -75,7 +77,7 @@ title: Home
         </div>
       </div>
 
-      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors">
+      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors reveal">
         <img src="/assets/images/featured-media/js-party-podcast.webp" alt="JS Party Podcast" class="w-full h-48 object-cover">
         <div class="p-6">
           <h3 class="text-xl font-bold text-white mb-3">
