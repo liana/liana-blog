@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "The PRD Is a Living Document Now"
-date: 2026-05-28
+date: 2026-04-15
 categories:
   - Product Management
 featured_image: /assets/images/featured/prd-rebuild.jpg

@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "The Governance Layer Nobody's Solved Yet"
-date: 2026-06-19
+date: 2026-05-20
 categories:
   - AI Strategy
 featured_image: /assets/images/featured/governance-gap.jpg
