@@ -6,8 +6,7 @@ permalink: /about/
 
 <div class="prose prose-lg max-w-none">
 
-<div class="mb-8 text-center">
-  <p class="text-xl text-gray-200 leading-relaxed">Liana Leahy combines deep technical expertise with a collaborative leadership style to deliver innovative, regulated digital products. Her experience spans AI/LLM solutions, identity management, and customer-focused strategies.</p>
+<div class="mb-8">
 </div>
 
 <div class="bg-brand-bg-dark -mx-4 px-4 py-8 rounded-lg mb-12">
@@ -34,8 +33,10 @@ permalink: /about/
 </div>
 
 <div class="space-y-6">
-  <p class="text-gray-200">I'm a Silicon Valley native who studied Computer Science and Theater at Smith College, which pretty much sums up my approach to building products—balancing technical precision with human empathy. My career has taken me from developing financial software and performing in off-Broadway musicals in NYC, to leading technical development at Harvard's Berkman Center alongside Vint Cerf on StopBadware, a cyber-justice initiative protecting internet users. I've built high-scale Facebook games for millions of players with Jon Radoff, led digital transformation at the MBTA (winning a 2019 Webby Honoree award), and served as Director of Product Management at Woebot Health, where I focused on the ethical deployment of AI chatbots for mental health.</p>
-    <p class="text-gray-200">Currently, I'm a Principal Product Manager - Technical at Amazon Robotics, leading the strategic definition of operations software to enhance facility efficiency. In my career, I've moved from engineering to product management because I became fascinated with not just how things are built, but why—and when I'm not obsessing over product roadmaps, you'll find me making music and learning new instruments, because the best products, like the best performances, require both technical skill and constant practice.</p>
+  <p class="text-gray-200">I build systems that bridge the gap between complex machine intelligence and human intent. As a Silicon Valley native with a foundation in Computer Science and Theater from Smith College, I approach product development as both a rigorous engineering discipline and a narrative art.</p>
+  <p class="text-gray-200">My career is defined by high-stakes technical environments. At Harvard's Berkman Center, I led technical development alongside Vint Cerf on StopBadware, a cyber-justice initiative protecting internet users. My path continued with building high-scale Facebook games for millions of players with Jon Radoff, leading the award-winning digital transformation of the MBTA (a 2019 Webby Honoree), and serving as Director of Product Management at Woebot Health, where I specialized in the ethical deployment of AI chatbots for mental health.</p>
+  <p class="text-gray-200">Currently, as a Principal Product Manager at Amazon, I focus on the strategic orchestration of operations software at scale. My work centers on "Outcome-First" product management: defining the problem before writing a single line of code or a single user story. I operate at the intersection of agentic AI, multi-agent orchestration, and governance, building frameworks that turn autonomous systems into reliable business value.</p>
+  <p class="text-gray-200">When I am not defining roadmaps, I am studying music. Great products, like great performances, require both flawless technical execution and the ability to improvise. I am currently focused on the governance of autonomous systems and the future of fractional advisory for the startup ecosystem.</p>
 </div>
 
 </div>
