@@ -3,7 +3,6 @@ layout: layouts/post.njk
 title: "Vibe Coding: Why AI Still Needs a Pilot"
 date: 2025-04-13
 categories:
-  - Product Management
   - Software Development
 featured_image: /assets/images/featured/vibe-coding.jpg
 excerpt: "Exploring the limitations of AI-assisted coding tools like Cursor, and why experienced programmers remain essential despite automation advances."
