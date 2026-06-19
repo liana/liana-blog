@@ -8,8 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-  document.querySelectorAll('.reveal').forEach((el, i) => {
-    el.style.setProperty('--reveal-index', i % 6);
+  document.querySelectorAll('.reveal-stagger').forEach((container) => {
+    const children = container.querySelectorAll(':scope > .reveal');
+    children.forEach((el, i) => {
+      el.style.setProperty('--reveal-index', i);
+      observer.observe(el);
+    });
+  });
+
+  document.querySelectorAll('.reveal:not(.reveal-stagger .reveal)').forEach((el) => {
     observer.observe(el);
   });
 });

@@ -121,8 +121,8 @@
 }
 
 /* Staggered children for grids */
-.reveal-stagger .reveal {
-  transition-delay: calc(var(--reveal-index, 0) * 0.1s);
+.reveal-stagger > .reveal {
+  transition-delay: calc(var(--reveal-index, 0) * 0.15s);
 }
 
 /* Reduced motion */
