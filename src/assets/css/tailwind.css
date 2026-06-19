@@ -31,6 +31,10 @@
     @apply bg-brand-bg-dark rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border-2 border-gray-600;
   }
 
+  .post-card a {
+    @apply no-underline;
+  }
+
   .post-card h2 {
     @apply text-white;
   }
