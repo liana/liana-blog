@@ -16,27 +16,5 @@ permalink: /about/
   <p class="text-gray-200">When I am not defining roadmaps, I am studying music. Great products, like great performances, require both flawless technical execution and the ability to improvise. I am currently focused on the governance of autonomous systems and the future of fractional advisory for the startup ecosystem.</p>
 </div>
 
-<div class="bg-brand-bg-dark -mx-4 px-4 py-8 rounded-lg mt-12 animate-fade-in-up animate-delay-4">
-  <div class="grid grid-cols-3 gap-6">
-  <div class="text-center">
-    <div class="max-w-xs mx-auto">
-      <img src="/assets/images/about/BuddyColorado.jpg" alt="Buddy: The Buddy Holly Story - Ordway National Tour" class="w-full h-48 object-cover object-center rounded-lg shadow-lg">
-      <p class="text-sm text-gray-400 mt-2">Buddy: The Buddy Holly Story</p>
-    </div>
-  </div>
-  <div class="text-center">
-    <div class="max-w-xs mx-auto">
-      <img src="/assets/images/about/desperate5.jpg" alt="Desperate Housewives - Channel Four Promo" class="w-full h-48 object-cover object-top rounded-lg shadow-lg">
-      <p class="text-sm text-gray-400 mt-2">Desperate Housewives</p>
-    </div>
-  </div>
-  <div class="text-center">
-    <div class="max-w-xs mx-auto">
-      <img src="/assets/images/about/CurseoftheJadeScorpion_preview-687x1024.jpg" alt="Curse of the Jade Scorpion - Rainbow Room Patron" class="w-full h-48 object-cover object-top rounded-lg shadow-lg">
-      <p class="text-sm text-gray-400 mt-2">Curse of the Jade Scorpion</p>
-    </div>
-  </div>
-  </div>
-</div>
 
 </div>
