@@ -3,18 +3,10 @@ layout: layouts/base.njk
 title: Home
 ---
 
-<div class="bg-brand-bg-dark pb-8">
-  <div class="relative py-36 bg-cover" style="background-image: url('/assets/images/hero-background.webp'); background-position: left 70%;">
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div class="relative max-w-5xl mx-auto px-4 text-center">
-      <a href="/blog/" class="btn-primary inline-block animate-fade-in-up animate-delay-3">Read the Blog</a>
-    </div>
-  </div>
-</div>
 
-<div class="bg-brand-bg py-16">
+<div class="bg-white py-16">
   <div class="max-w-5xl mx-auto px-4">
-  <h2 class="text-3xl font-bold text-white mb-8 reveal">Latest Posts</h2>
+  <h2 class="text-3xl font-bold text-gray-900 mb-8 reveal">Latest Posts</h2>
 
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-stagger">
     {% set postslist = collections.posts %}
@@ -26,66 +18,66 @@ title: Home
   </div>
 
   <div class="text-center mt-12">
-    <a href="/blog/" class="text-white hover:text-gray-200 font-medium text-lg transition-colors">
+    <a href="/blog/" class="text-brand-green hover:text-brand-green-light font-medium text-lg transition-colors">
       View All Posts →
     </a>
   </div>
   </div>
 </div>
 
-<div class="bg-brand-bg-dark py-16 border-b border-gray-700">
+<div class="bg-brand-bg-alt py-16 border-t border-gray-200">
   <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-white mb-8 reveal">Featured</h2>
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 reveal">Featured</h2>
 
     <div class="grid md:grid-cols-4 gap-6 reveal-stagger">
-      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors reveal">
+      <div class="bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all reveal">
         <img src="/assets/images/featured-media/broadway-to-engineering.jpg" alt="From Broadway to Engineering" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-bold text-white mb-3">
-            <a href="https://hanselminutes.com/833/from-broadway-to-engineering-to-product-with-liana-leahy" target="_blank" rel="noopener noreferrer" class="hover:text-gray-200">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            <a href="https://hanselminutes.com/833/from-broadway-to-engineering-to-product-with-liana-leahy" target="_blank" rel="noopener noreferrer" class="hover:text-brand-green-light">
               From Broadway to Engineering to Product with Liana Leahy
             </a>
           </h3>
-          <p class="text-gray-200 mb-4">Scott Hanselman discusses Liana Leahy's career transition from Broadway into technology fields.</p>
+          <p class="text-gray-600 mb-4">Scott Hanselman discusses Liana Leahy's career transition from Broadway into technology fields.</p>
           <span class="text-sm text-gray-400">Podcast - Hanselminutes</span>
         </div>
       </div>
 
-      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors reveal">
+      <div class="bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all reveal">
         <img src="/assets/images/featured-media/mbta-article.jpg" alt="MBTA Article" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-bold text-white mb-3">
-            <a href="https://medium.com/@lleahy/how-mbta-com-listens-and-learns-from-you-2ad53664b52f" target="_blank" rel="noopener noreferrer" class="hover:text-gray-200">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            <a href="https://medium.com/@lleahy/how-mbta-com-listens-and-learns-from-you-2ad53664b52f" target="_blank" rel="noopener noreferrer" class="hover:text-brand-green-light">
               Mbta.com listens and learns from you
             </a>
           </h3>
-          <p class="text-gray-200 mb-4">An exploration of user research and product strategy applied to improving the MBTA website.</p>
+          <p class="text-gray-600 mb-4">An exploration of user research and product strategy applied to improving the MBTA website.</p>
           <span class="text-sm text-gray-400">Article - Medium</span>
         </div>
       </div>
 
-      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors reveal">
+      <div class="bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all reveal">
         <img src="/assets/images/featured-media/deprecations-video.jpeg" alt="Deprecations Video" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-bold text-white mb-3">
-            <a href="https://www.youtube.com/watch?v=BX-xcaJH6AA" target="_blank" rel="noopener noreferrer" class="hover:text-gray-200">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            <a href="https://www.youtube.com/watch?v=BX-xcaJH6AA" target="_blank" rel="noopener noreferrer" class="hover:text-brand-green-light">
               My Journey through Deprecations
             </a>
           </h3>
-          <p class="text-gray-200 mb-4">A musical performance about deprecated code, presented at Boston's Wicked Good Ruby conference.</p>
+          <p class="text-gray-600 mb-4">A musical performance about deprecated code, presented at Boston's Wicked Good Ruby conference.</p>
           <span class="text-sm text-gray-400">Video - YouTube</span>
         </div>
       </div>
 
-      <div class="bg-brand-bg rounded-lg overflow-hidden border border-gray-600 hover:border-gray-500 transition-colors reveal">
+      <div class="bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all reveal">
         <img src="/assets/images/featured-media/js-party-podcast.webp" alt="JS Party Podcast" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-bold text-white mb-3">
-            <a href="https://changelog.com/jsparty/203" target="_blank" rel="noopener noreferrer" class="hover:text-gray-200">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            <a href="https://changelog.com/jsparty/203" target="_blank" rel="noopener noreferrer" class="hover:text-brand-green-light">
               From engineering to product
             </a>
           </h3>
-          <p class="text-gray-200 mb-4">Amal and KBall interview Liana Leahy regarding her professional evolution from software engineering to product management.</p>
+          <p class="text-gray-600 mb-4">Amal and KBall interview Liana Leahy regarding her professional evolution from software engineering to product management.</p>
           <span class="text-sm text-gray-400">Podcast - Changelog</span>
         </div>
       </div>

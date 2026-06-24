@@ -8,7 +8,6 @@ pagination:
 ---
 
 <div class="max-w-5xl mx-auto px-4 py-12">
-  <h1 class="text-3xl font-bold text-brand-blue mb-12 animate-fade-in-up">Blog</h1>
 
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 reveal-stagger">
     {% for post in posts %}
@@ -22,19 +21,19 @@ pagination:
   {% if pagination.hrefs.length > 1 %}
   <nav aria-label="Pagination" class="flex justify-center gap-2">
     {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}" class="px-4 py-2 bg-brand-teal text-white rounded hover:bg-teal-700 transition-colors">
+    <a href="{{ pagination.href.previous }}" class="px-4 py-2 bg-brand-green text-white rounded hover:bg-brand-green-light transition-colors">
       ← Previous
     </a>
     {% endif %}
 
     {% for href in pagination.hrefs %}
-    <a href="{{ href }}" class="px-4 py-2 {% if pagination.hrefs[loop.index0] == page.url %}bg-brand-blue text-white{% else %}bg-gray-200 text-gray-700 hover:bg-gray-300{% endif %} rounded transition-colors">
+    <a href="{{ href }}" class="px-4 py-2 {% if pagination.hrefs[loop.index0] == page.url %}bg-brand-green text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} rounded transition-colors">
       {{ loop.index }}
     </a>
     {% endfor %}
 
     {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}" class="px-4 py-2 bg-brand-teal text-white rounded hover:bg-teal-700 transition-colors">
+    <a href="{{ pagination.href.next }}" class="px-4 py-2 bg-brand-green text-white rounded hover:bg-brand-green-light transition-colors">
       Next →
     </a>
     {% endif %}

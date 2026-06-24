@@ -2,33 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles */
 @layer base {
   body {
-    @apply text-brand-light bg-brand-bg;
+    @apply text-gray-700 bg-white;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-white;
+    @apply font-bold text-gray-900;
   }
 
   a {
-    @apply text-brand-cream hover:text-white transition-colors no-underline;
+    @apply text-brand-green hover:text-brand-green-light transition-colors no-underline;
   }
 
-  /* Ensure sufficient contrast for paragraphs and lists */
   p, li, span {
-    @apply text-gray-200;
+    @apply text-gray-600;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-2 bg-brand-bg-dark text-white border-2 border-white rounded-lg hover:bg-white hover:text-brand-bg transition-colors font-medium;
+    @apply px-6 py-2 bg-brand-green text-white border-2 border-brand-green rounded-lg hover:bg-brand-green-light hover:border-brand-green-light transition-colors font-medium;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 6px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    border-bottom: 4px solid #1B4332;
+    color: #1B4332;
+  }
+
+  .nav-link-active {
+    border-bottom: 4px solid #1B4332;
+    color: #1B4332;
+    font-weight: 600;
   }
 
   .post-card {
-    @apply bg-brand-bg-dark rounded-lg shadow-md overflow-hidden hover:shadow-lg border-2 border-gray-600;
+    @apply bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md border border-gray-200;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
 
@@ -41,36 +57,36 @@
   }
 
   .post-card h2 {
-    @apply text-white;
+    @apply text-gray-900;
   }
 
   .post-card p {
-    @apply text-gray-200;
+    @apply text-gray-600;
   }
 
   /* Blog post content styles */
   article h1, article h2, article h3, article h4, article h5, article h6 {
-    @apply text-white font-bold;
+    @apply text-gray-900 font-bold;
   }
 
   article p {
-    @apply text-gray-200 leading-relaxed;
+    @apply text-gray-600 leading-relaxed;
   }
 
   article ul, article ol {
-    @apply text-gray-200;
+    @apply text-gray-600;
   }
 
   article a {
-    @apply text-white underline hover:text-gray-300;
+    @apply text-brand-green underline hover:text-brand-green-light;
   }
 
   article strong {
-    @apply text-white font-bold;
+    @apply text-gray-900 font-bold;
   }
 
   article code {
-    @apply bg-brand-bg-dark text-gray-200 px-2 py-1 rounded;
+    @apply bg-gray-100 text-gray-700 px-2 py-1 rounded;
   }
 }
 

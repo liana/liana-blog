@@ -1,13 +1,14 @@
-<header class="bg-brand-bg-dark shadow-lg sticky top-0 z-50">
-  <nav class="max-w-5xl mx-auto px-4 py-6">
-    <div class="flex items-center justify-between">
-      <a href="/" class="text-4xl font-normal text-white hover:text-gray-200 transition-colors" style="font-family: 'Fredoka', sans-serif;">
-        {{ site.title }}
-      </a>
-      <ul class="flex space-x-6">
+<header class="bg-white">
+  <div class="bg-white">
+    <img src="/assets/images/hero-banner.png" alt="{{ site.title }}" class="w-full" style="-webkit-mask-image: radial-gradient(ellipse 85% 85% at center, black 60%, transparent 100%); mask-image: radial-gradient(ellipse 85% 85% at center, black 60%, transparent 100%);">
+  </div>
+  <nav class="bg-white border-b border-gray-300">
+    <div class="max-w-5xl mx-auto px-4 py-5">
+      <ul class="flex justify-center items-center" style="gap: 4rem;">
         {% for item in site.navigation %}
+        {% set isActive = (page.url == item.url) or (item.url == '/blog/' and '/blog/' in page.url) or (item.url == '/blog/' and '/posts/' in page.url) or (item.url == '/about/' and '/about/' in page.url) %}
         <li>
-          <a href="{{ item.url }}" class="text-white hover:text-gray-200 transition-colors font-medium">
+          <a href="{{ item.url }}" class="nav-link {% if isActive %}nav-link-active{% endif %}" style="font-size: 1.25rem; letter-spacing: 0.05em;">
             {{ item.title }}
           </a>
         </li>

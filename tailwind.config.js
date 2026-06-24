@@ -5,14 +5,11 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          bg: '#3f5762',        // Dark blue-gray background
-          'bg-dark': '#2d3f47', // Darker blue-gray
-          cream: '#F9F6DE',     // Cream/off-white primary
-          secondary: '#fcf8f2', // Light beige
-          cyan: '#0693e3',      // Vivid cyan blue accent
-          purple: '#9b51e0',    // Vivid purple accent
-          light: '#f7fafc',     // Very light gray foreground
-          teal: '#00d084',      // Vivid green-cyan (header)
+          bg: '#FFFFFF',
+          'bg-alt': '#FAFAF9',
+          green: '#1B4332',
+          'green-light': '#2D6A4F',
+          cream: '#1B4332',
         }
       },
       fontFamily: {
@@ -22,36 +19,28 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            color: '#e5e7eb', // gray-200 for body text
-            h1: {
-              color: '#ffffff', // white for headings
-            },
-            h2: {
-              color: '#ffffff',
-            },
-            h3: {
-              color: '#ffffff',
-            },
-            h4: {
-              color: '#ffffff',
-            },
-            h5: {
-              color: '#ffffff',
-            },
-            h6: {
-              color: '#ffffff',
-            },
-            strong: {
-              color: '#ffffff',
-            },
+            color: '#4A4A4A',
+            h1: { color: '#1A1A1A' },
+            h2: { color: '#1A1A1A' },
+            h3: { color: '#1A1A1A' },
+            h4: { color: '#1A1A1A' },
+            h5: { color: '#1A1A1A' },
+            h6: { color: '#1A1A1A' },
+            strong: { color: '#1A1A1A' },
             a: {
-              color: '#ffffff',
-              '&:hover': {
-                color: '#d1d5db', // gray-300
-              },
+              color: '#1B4332',
+              '&:hover': { color: '#2D6A4F' },
             },
             code: {
-              color: '#e5e7eb',
+              color: '#4A4A4A',
+              backgroundColor: '#F5F5F4',
+              borderRadius: '0.25rem',
+              padding: '0.15rem 0.4rem',
+            },
+            blockquote: {
+              borderLeftColor: '#1B4332',
+              color: '#1A1A1A',
+              fontStyle: 'normal',
             },
           },
         },
