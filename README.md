@@ -1,223 +1,73 @@
-# Lyrics & Logic
+# Codesplosion
 
-A modern, responsive personal blog built with 11ty (Eleventy) and Tailwind CSS. This static site replaces the previous WordPress installation at lianaleahy.com.
+Personal blog at lianaleahy.com. Built with Eleventy and Tailwind CSS, auto-deployed to DreamHost via GitHub Actions.
 
-## Features
-
-- ✅ Static site generation with 11ty v3
-- ✅ Tailwind CSS for styling with custom brand colors
-- ✅ Markdown-based content management
-- ✅ Blog post categories (Software Development, Product Management)
-- ✅ Pagination support
-- ✅ RSS feed generation
-- ✅ XML sitemap
-- ✅ SEO-optimized with Open Graph and Twitter Card meta tags
-- ✅ Syntax highlighting for code blocks
-- ✅ Reading time calculation
-- ✅ Responsive design
-- ✅ Automatic deployment to DreamHost via GitHub Actions
-
-## Project Structure
-
-```
-liana-blog/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # GitHub Actions deployment workflow
-├── src/
-│   ├── _data/
-│   │   └── site.json           # Site metadata and navigation
-│   ├── _includes/
-│   │   ├── layouts/            # Page layouts (base, post, page)
-│   │   ├── components/         # Reusable components (header, footer, etc.)
-│   │   └── partials/           # Page partials (head, meta tags)
-│   ├── posts/                  # Blog posts (Markdown)
-│   ├── pages/                  # Static pages (About, 404)
-│   ├── category/               # Category listing pages
-│   ├── assets/
-│   │   ├── css/
-│   │   ├── js/
-│   │   └── images/
-│   ├── index.njk               # Homepage
-│   ├── blog.njk                # Blog listing with pagination
-│   ├── categories.njk          # Categories overview
-│   ├── feed.njk                # RSS feed
-│   ├── sitemap.njk             # XML sitemap
-│   └── robots.txt
-├── _site/                      # Generated output (gitignored)
-├── .eleventy.js                # Eleventy configuration
-├── tailwind.config.js          # Tailwind configuration
-├── postcss.config.js           # PostCSS configuration
-└── package.json                # Dependencies and scripts
-```
-
-## Local Development
-
-### Prerequisites
-
-- Node.js 20 or higher
-- npm
-
-### Installation
+## Quick Start
 
 ```bash
-# Clone the repository
-git clone <your-repo-url>
-cd liana-blog
-
-# Install dependencies
 npm install
-```
-
-### Development Server
-
-```bash
-# Start development server with live reload
 npm run dev
 ```
 
-The site will be available at `http://localhost:8080/`
+Site runs at http://localhost:8080/
 
-This command runs both:
-- Eleventy in watch mode (rebuilds on file changes)
-- Tailwind CSS in watch mode (recompiles styles)
-
-### Production Build
+## Production Build
 
 ```bash
-# Build for production
 npm run build
 ```
 
-Output will be in the `_site/` directory.
+Output in `_site/`.
 
-## Writing Blog Posts
+## Design
 
-Create a new Markdown file in `src/posts/` with the following frontmatter:
+White palette with deep forest green (`#1B4332`) as the accent color. Header shows "Codesplosion" in Fredoka font with nav items (Blog, About, Resume) spaced to the right. Active page gets a green underline. Hover animates the underline in.
+
+Brand colors in `tailwind.config.js`:
+- `brand-green`: #1B4332 (primary accent)
+- `brand-green-light`: #2D6A4F (hover state)
+
+## Writing Posts
+
+Create a Markdown file in `src/posts/`:
 
 ```markdown
 ---
-title: "Your Post Title"
-date: 2024-01-15
-categories:
-  - Software Development
-  - Product Management
-featured_image: /assets/images/featured/your-image.jpg
-excerpt: "A brief description for SEO and social sharing"
 layout: layouts/post.njk
+title: "Your Post Title"
+date: 2026-01-15
+categories:
+  - AI Strategy
+featured_image: /assets/images/featured/your-image.jpg
+excerpt: "Brief description for SEO and social sharing"
 ---
 
-Your post content here...
+Content here...
 ```
 
-### Post Frontmatter Fields
+## Structure
 
-- `title` (required): Post title
-- `date` (required): Publication date
-- `categories` (optional): Array of categories
-- `featured_image` (optional): Path to featured image
-- `excerpt` (optional): Custom excerpt (auto-generated if not provided)
-- `layout` (required): Should be `layouts/post.njk`
-
-## Deployment
-
-### GitHub Actions Setup
-
-The site automatically deploys to DreamHost when you push to the `main` branch.
-
-#### Required GitHub Secrets
-
-Set these in your GitHub repository settings (Settings → Secrets and variables → Actions):
-
-1. `FTP_SERVER`: Your FTP server address (e.g., `ftp.lianaleahy.com`)
-2. `FTP_USERNAME`: Your FTP username
-3. `FTP_PASSWORD`: Your FTP password
-
-#### Workflow
-
-1. Push changes to `main` branch
-2. GitHub Actions automatically:
-   - Installs dependencies
-   - Builds the site
-   - Deploys via FTP to DreamHost
-
-You can also trigger deployment manually from the Actions tab in GitHub.
-
-### Manual Deployment
-
-If you need to deploy manually:
-
-```bash
-# Build the site
-npm run build
-
-# Upload the _site/ directory to your server via FTP/SFTP
+```
+src/
+├── _data/site.json        # Title, navigation, social links
+├── _includes/
+│   ├── layouts/           # base, post, page
+│   └── components/        # header, footer, post-card
+├── posts/                 # Blog posts (Markdown)
+├── pages/                 # Static pages (About)
+├── assets/css/            # Tailwind source
+├── index.njk              # Homepage
+└── blog.njk               # Blog listing with pagination
 ```
 
 ## Configuration
 
-### Site Metadata
+- **Site metadata & nav:** `src/_data/site.json`
+- **Colors & typography:** `tailwind.config.js`
+- **Nav hover animation:** `src/assets/css/tailwind.css` (`.nav-link` class)
 
-Edit `src/_data/site.json` to update:
-- Site title and description
-- Author information
-- Social media links
-- Navigation menu
+## Deployment
 
-### Brand Colors
+Pushes to `main` trigger GitHub Actions which builds and deploys via FTP.
 
-Tailwind brand colors are defined in `tailwind.config.js`:
-- `brand-blue`: #1e3a8a
-- `brand-teal`: #0d9488
-- `brand-light`: #e0f2fe
-
-### Adding Navigation Items
-
-Edit the `navigation` array in `src/_data/site.json`:
-
-```json
-{
-  "navigation": [
-    { "title": "Home", "url": "/" },
-    { "title": "Blog", "url": "/blog/" },
-    { "title": "Your Page", "url": "/your-page/" }
-  ]
-}
-```
-
-## WordPress Migration
-
-To migrate content from the old WordPress site:
-
-1. Export WordPress content (Tools → Export → All content)
-2. Convert to Markdown using [wordpress-export-to-markdown](https://github.com/lonekorean/wordpress-export-to-markdown)
-3. Move converted files to `src/posts/`
-4. Download featured images to `src/assets/images/featured/`
-5. Update image paths in frontmatter
-
-## SEO Features
-
-- ✅ Semantic HTML5 markup
-- ✅ Open Graph meta tags for social sharing
-- ✅ Twitter Card support
-- ✅ Canonical URLs
-- ✅ XML sitemap at `/sitemap.xml`
-- ✅ RSS feed at `/feed.xml`
-- ✅ robots.txt
-- ✅ Descriptive alt text for images
-
-## Browser Support
-
-Modern browsers (last 2 versions):
-- Chrome
-- Firefox
-- Safari
-- Edge
-
-## License
-
-ISC
-
-## Author
-
-Liana Leahy - [hello@lianaleahy.com](mailto:hello@lianaleahy.com)
+Required secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`

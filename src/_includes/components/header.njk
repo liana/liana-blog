@@ -1,10 +1,10 @@
-<header class="bg-white">
-  <div class="bg-white">
-    <img src="/assets/images/hero-banner.png" alt="{{ site.title }}" class="w-full" style="-webkit-mask-image: radial-gradient(ellipse 85% 85% at center, black 60%, transparent 100%); mask-image: radial-gradient(ellipse 85% 85% at center, black 60%, transparent 100%);">
-  </div>
-  <nav class="bg-white border-b border-gray-300">
-    <div class="max-w-5xl mx-auto px-4 py-5">
-      <ul class="flex justify-center items-center" style="gap: 4rem;">
+<header class="bg-white border-b border-gray-200">
+  <nav class="max-w-5xl mx-auto px-4 py-5">
+    <div class="flex items-center justify-between">
+      <a href="/" class="text-brand-green hover:text-brand-green-light transition-colors" style="font-family: 'Fredoka', sans-serif; font-size: 2rem;">
+        {{ site.title }}
+      </a>
+      <ul class="flex items-center" style="gap: 4rem;">
         {% for item in site.navigation %}
         {% set isActive = (page.url == item.url) or (item.url == '/blog/' and '/blog/' in page.url) or (item.url == '/blog/' and '/posts/' in page.url) or (item.url == '/about/' and '/about/' in page.url) %}
         <li>
