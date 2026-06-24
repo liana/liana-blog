@@ -4,7 +4,7 @@ title: "What makes AI product management different"
 date: 2025-01-27
 categories:
   - Product Management
-featured_image: /assets/images/featured/ai-pm-different.jpg
+featured_image: /assets/images/featured/ai-pm-different.png
 excerpt: "Exploring three key distinctions in managing AI-driven products versus traditional software: uncertainty, testing approaches, and ethical stewardship."
 ---
 

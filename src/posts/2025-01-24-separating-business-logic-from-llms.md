@@ -4,7 +4,7 @@ title: "Separating Business Logic from LLMs for Reliable Enterprise AI"
 date: 2025-01-24
 categories:
   - Software Development
-featured_image: /assets/images/featured/separating-business-logic.jpg
+featured_image: /assets/images/featured/separating-business-logic.png
 excerpt: "Why unrestricted AI autonomy fails in production environments and how structured automation creates reliable enterprise AI systems."
 ---
 

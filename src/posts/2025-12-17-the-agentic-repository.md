@@ -4,7 +4,7 @@ title: "The Agentic Repository"
 date: 2025-12-17
 categories:
   - Software Development
-featured_image: /assets/images/featured/agentic-repository.jpg
+featured_image: /assets/images/featured/agentic-repository.png
 excerpt: "Explore how repository architecture directly impacts AI agent effectiveness. Agents flourish in structured, intentional, predictable environments."
 ---
 

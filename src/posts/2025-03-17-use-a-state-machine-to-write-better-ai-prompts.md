@@ -4,7 +4,7 @@ title: "Use a State Machine to write better AI Prompts"
 date: 2025-03-17
 categories:
   - Software Development
-featured_image: /assets/images/featured/state-machine.webp
+featured_image: /assets/images/featured/state-machine.png
 excerpt: "Engineering-trained professionals excel at crafting AI prompts because they think in structured, linear pathways that AI can follow."
 ---
 

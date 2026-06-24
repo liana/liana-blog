@@ -4,7 +4,7 @@ title: "The Craft Behind the Output"
 date: 2026-06-18
 categories:
   - AI Strategy
-featured_image: /assets/images/featured/better-not-faster.jpg
+featured_image: /assets/images/featured/better-not-faster.png
 excerpt: "Most companies are training people to use AI tools. Very few are training them to think better alongside those tools."
 ---
 

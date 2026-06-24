@@ -4,7 +4,7 @@ title: "AI is a Goldfish"
 date: 2025-01-29
 categories:
   - Software Development
-featured_image: /assets/images/featured/ai-goldfish.jpg
+featured_image: /assets/images/featured/ai-goldfish.png
 excerpt: "Exploring why AI systems struggle with memory retention in conversations and how to build effective conversational AI with traditional software engineering practices."
 ---
 

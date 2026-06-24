@@ -4,7 +4,7 @@ title: "Design Thoughtful Solutions"
 date: 2025-07-28
 categories:
   - Product Management
-featured_image: /assets/images/featured/design-thoughtful-solutions.jpg
+featured_image: /assets/images/featured/design-thoughtful-solutions.png
 excerpt: "How organizations should implement AI thoughtfully rather than recklessly. Critical risks in deploying unstructured chat interfaces and structured prompting as a solution."
 ---
 

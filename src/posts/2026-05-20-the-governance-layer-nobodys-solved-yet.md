@@ -4,7 +4,7 @@ title: "The Governance Layer Nobody's Solved Yet"
 date: 2026-05-20
 categories:
   - AI Strategy
-featured_image: /assets/images/featured/governance-gap.jpg
+featured_image: /assets/images/featured/governance-gap.png
 excerpt: "The agent still produces working code. That's what makes the gaps so dangerous."
 ---
 

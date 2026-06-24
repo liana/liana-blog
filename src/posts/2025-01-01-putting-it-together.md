@@ -4,7 +4,7 @@ title: "Putting it Together"
 date: 2025-01-01
 categories:
   - Product Management
-featured_image: /assets/images/featured/putting-it-together.jpg
+featured_image: /assets/images/featured/putting-it-together.png
 excerpt: "Drawing parallels between Stephen Sondheim's composition and software development - how creative vision requires patient, meticulous execution."
 ---
 

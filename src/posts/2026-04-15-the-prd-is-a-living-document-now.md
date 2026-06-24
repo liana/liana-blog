@@ -4,7 +4,7 @@ title: "The PRD Is a Living Document Now"
 date: 2026-04-15
 categories:
   - Product Management
-featured_image: /assets/images/featured/prd-rebuild.jpg
+featured_image: /assets/images/featured/prd-rebuild.png
 excerpt: "When you can build features in minutes, the PRD has to keep up. It matters more than ever, but the way you maintain it changes completely."
 ---
 

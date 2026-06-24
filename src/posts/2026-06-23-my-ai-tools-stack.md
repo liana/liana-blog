@@ -5,7 +5,7 @@ date: 2026-06-23
 categories:
   - AI Strategy
   - Tools
-featured_image: /assets/images/featured/ai-tools-stack.jpg
+featured_image: /assets/images/featured/ai-tools-stack.png
 excerpt: "My AI stack isn't just a list of things I subscribe to. It's a set of tools I use, a foundation I maintain, and a daily driver I built myself."
 ---
 
